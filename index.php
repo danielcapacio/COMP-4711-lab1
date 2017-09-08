@@ -5,6 +5,8 @@
         <title></title>
     </head>
     <body style="background-color: lightgreen">
+        <h1>Silly Students - COMP 4711 Lab 1 - Set 4R</h1>
+        <hr/>
         <?php
             /* display Students */
             include('Student.php');
@@ -51,5 +53,7 @@
                 echo $student->toString();
             }
         ?>
+        <hr/>
+        <p>Due: Sunday, Sep 10, 17:30 PST</p>
     </body>
 </html>
