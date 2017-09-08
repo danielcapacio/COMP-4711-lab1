@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <title></title>
     </head>
-    <body>
+    <body style="background-color: lightgreen">
         <?php
+            /* display Students */
             include('Student.php');
             $students = array();
             
@@ -30,6 +31,7 @@
             $second->add_grade(50);
             $students['a456'] = $second;
             
+            /* adding self */
             $third = new Student();
             $third->surname = "Capacio";
             $third->first_name = "Daniel";
@@ -41,8 +43,10 @@
             $third->add_grade(90);
             $students['a00961774'] = $third;
             
+            /* orders $students in key sequence */
             ksort($students);
             
+            /* loop through $students array to display contact information */
             foreach ($students as $student) {
                 echo $student->toString();
             }
